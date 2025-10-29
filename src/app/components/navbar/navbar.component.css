@@ -1,0 +1,64 @@
+/* Toolbar container */
+.app-toolbar {
+  padding: 0 24px;          /* add breathing space */
+  box-sizing: border-box;
+  height: 64px;             /* consistent height */
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Brand name (Examportal) */
+.brand {
+  font-size: 20px;          /* larger brand font */
+  font-weight: 600;
+  margin-left: 8px;
+}
+
+/* Flexible spacer pushes right content */
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+/* Right-side buttons container */
+.nav-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: -10px;                /* space between Login / Register / Logout */
+  flex-wrap: wrap;
+}
+
+/* Buttons */
+.nav-buttons a,
+.nav-buttons button {
+  font-size: 25px;          /* increase readability */
+  font-weight: 500;
+  color: white !important;  /* visible on accent toolbar */
+  letter-spacing: 0.5px;
+  text-transform: none;     /* remove uppercase look */
+  padding: 8px 14px;
+}
+
+/* Hover effect */
+.nav-buttons a:hover,
+.nav-buttons button:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 6px;
+}
+
+/* Small-screen adjustments */
+@media (max-width: 768px) {
+  .app-toolbar {
+    height: auto;
+    padding: 8px 16px;
+  }
+
+  .brand {
+    font-size: 18px;
+  }
+
+  .nav-buttons a,
+  .nav-buttons button {
+    font-size: 15px;
+    padding: 6px 10px;
+  }
+}
