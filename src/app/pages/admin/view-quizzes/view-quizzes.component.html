@@ -22,7 +22,9 @@
     <button mat-stroked-button color="accent" class="ml20">
       Max Marks: {{ q.maxMarks }}
     </button>
-    <button mat-stroked-button color="accent" class="ml20">
+    <button 
+    [routerLink]="'/admin/view-question/'" 
+    mat-stroked-button color="accent" class="ml20">
       Questions: {{ q.numberOfQuestions }}
     </button>
     <button

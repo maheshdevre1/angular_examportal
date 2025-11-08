@@ -54,8 +54,8 @@ ngOnInit(): void {
   }
 
 
-  // delete quizz
-  // Method to delete a quiz by its ID
+
+// Method to delete a quiz by its ID
 deleteQuiz(qId: any) {
 
   // Step 1️⃣: Show confirmation popup using SweetAlert2
